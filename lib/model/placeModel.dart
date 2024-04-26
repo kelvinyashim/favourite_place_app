@@ -2,6 +2,7 @@ import 'package:uuid/uuid.dart';
 
 final uuid = Uuid();
 
+
 class Places {
   final id;
   final String title;
