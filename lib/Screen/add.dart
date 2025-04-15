@@ -36,10 +36,9 @@ class _AddState extends State<Add> {
         if (!context.mounted) {
           return;
         }
-        final resData = json.decode(response.body);
+        
         
         Navigator.of(context).pop(Places(
-          id: resData['name'],
           title: enteredTitle,
         ));
       }

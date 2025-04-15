@@ -36,7 +36,7 @@ class _PlacesState extends State<Place> {
         final result = json.decode(response.body);
         if (result != null) {
           for (final item in result.entries) {
-            fave.add(Places(id: item.key, title: item.value['title']));
+            fave.add(Places( title: item.value['title']));
           }
           // result.forEach((key, value) {
           //   fave.add(Places(title: value['title']));
